@@ -57,6 +57,7 @@ a{
   padding: 5% 0;
 }
 
+
 .logo{
   cursor: pointer;
   margin-right: auto;
@@ -100,14 +101,51 @@ button:hover{
   display: flex;
   align-items: center;
   padding: 0 10%;
+  justify-content: space-between;
+  z-index: -1;
+  background-color: transparent;
+  bottom:0;
 }
+body{
+  background-color: transparent;
+}
+
+
+
+.bcklogo{
+  flex-basis: 35%;
+  width: 500px; /* Set the width */
+  height: auto;
+  background-attachment: fixed;
+  filter: blur(0.5px);
+}
+.bcklogo {
+  position: fixed;
+  top: 60%; /* Adjust as needed */
+  left: 70%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Set a lower z-index to ensure it stays behind other content */
+}
+
+
+#Home {
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 100px;
+}
+
+#About{
+  z-index: 1;
+}
+
 
 .home-content{
   max-width: 600px;
+  flex-basis: 60%;
 }
 
 .home-content h1{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -271,6 +309,7 @@ textarea{
 }
 
 
+
 #cards{
   display: flex;
   flex-wrap: wrap;
@@ -329,6 +368,9 @@ textarea{
 .about-col-2{
   flex-basis: 60%;
 }
+.about-col-2 p{
+  padding: 10px 0 0;
+}
 
 .tab-titles{
   display: flex;
@@ -360,13 +402,28 @@ textarea{
 }
 .tab-contents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 18px 0;
   background: transparent;
 }
+.tab-contents p{
+  padding: 7px 0 0;
+}
+
+.aboutbio{
+  font-size: 17px;
+}
+
+#experience p,
+#coursework p{
+  font-size: 16px;
+  padding: 5px 0 0;
+}
+
 
 .tab-contents li{
   background-color: transparent;
   color: white;
+  font-size: 14px;
 }
 
 
@@ -374,16 +431,17 @@ textarea{
 
 .tab-contents ul li span{
   color: rgba(16, 24, 34, 0.9);
-  font-size: 14px;
   color: #2069bc;
 }
 .tab-contents span{
   background-color: transparent;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .tab-contents{
   display: none;
-  padding: 10px;
+  padding: 0 0;
   background-color: transparent;
   border-radius: 10px;
 }
